@@ -30,7 +30,7 @@ class Generator
     ) {
         $this->iteratorFactory = $iteratorFactory;
         $this->rangeIteratorFactory = $rangeIteratorFactory ?: \Magento\Framework\App\ObjectManager::getInstance()
-            ->get(\Magento\Framework\DB\Query\BatchIteratorFactory::class);
+            ->get(\Silarn\CatalogIndexerFix\Rewrite\Framework\DB\Query\BatchRangeIteratorFactory::class);
     }
 
     /**
