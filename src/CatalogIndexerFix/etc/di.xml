@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Magento\Catalog\Model\Indexer\Category\Product\Action\Full"
+                type="Silarn\CatalogIndexerFix\Rewrite\Model\Catalog\Indexer\Category\Product\Action\Full"/>
+    <preference for="Magento\Catalog\Model\Indexer\Category\Product\AbstractAction"
+                type="Silarn\CatalogIndexerFix\Rewrite\Model\Catalog\Indexer\Category\Product\AbstractAction"/>
+    <preference for="Magento\Framework\DB\Adapter\Pdo\Mysql"
+                type="Silarn\CatalogIndexerFix\Rewrite\Framework\DB\Adapter\Pdo\Mysql"/>
+    <preference for="Magento\Framework\DB\Query\BatchIterator"
+                type="Silarn\CatalogIndexerFix\Rewrite\Framework\DB\Query\BatchIterator"/>
+    <preference for="Magento\Framework\DB\Query\BatchIteratorFactory"
+                type="Silarn\CatalogIndexerFix\Rewrite\Framework\DB\Query\BatchIteratorFactory"/>
+    <preference for="Magento\Framework\DB\Query\Generator"
+                type="Silarn\CatalogIndexerFix\Rewrite\Framework\DB\Query\Generator"/>
+    <type name="Magento\Catalog\Model\Indexer\Category\Product\Action\FullFactory">
+        <arguments>
+            <argument name="instanceName" xsi:type="string">SmithAndAssociates\Fixes\Rewrite\Model\Catalog\Indexer\Category\Product\Action\Full</argument>
+        </arguments>
+    </type>
+</config>
