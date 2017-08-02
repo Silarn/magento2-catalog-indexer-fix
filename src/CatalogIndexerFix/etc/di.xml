@@ -14,7 +14,7 @@
                 type="Silarn\CatalogIndexerFix\Rewrite\Framework\DB\Query\Generator"/>
     <type name="Magento\Catalog\Model\Indexer\Category\Product\Action\FullFactory">
         <arguments>
-            <argument name="instanceName" xsi:type="string">SmithAndAssociates\Fixes\Rewrite\Model\Catalog\Indexer\Category\Product\Action\Full</argument>
+            <argument name="instanceName" xsi:type="string">Silarn\CatalogIndexerFix\Rewrite\Model\Catalog\Indexer\Category\Product\Action\Full</argument>
         </arguments>
     </type>
 </config>
